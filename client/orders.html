@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Orders | ShopEase</title>
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body data-page="orders">
+<div class="top-strip">Welcome to ShopEase. Discover products you'll love.</div>
+<header class="site-header">
+    <div class="nav-wrap">
+        <a class="brand" href="index.html">
+            <span class="brand-mark">S</span>
+            <span>Shop<span>Ease</span></span>
+        </a>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="index.html?page=products">Shop</a>
+            <a href="orders.html">My Orders</a>
+            <a href="notifications.html">Notifications</a>
+        </nav>
+        <div class="nav-actions">
+            <a class="cart-count" data-cart-count href="cart.html">0</a>
+            <a class="user-pill" data-user-name href="account.html">My Account</a>
+        </div>
+    </div>
+</header>
+<main class="page-container">
+<section class="page-heading">
+    <h1>My Orders</h1>
+    <p>Track your purchases and check their current status.</p>
+</section>
+<section class="panel">
+    <div id="orders-content">
+        <div class="empty-state">Loading your orders...</div>
+    </div>
+</section>
+</main>
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div>
+            <div class="brand" style="color:white">
+                <span class="brand-mark">S</span>
+                <span>Shop<span>Ease</span></span>
+            </div>
+            <p>Your everyday shopping destination. Quality<br>products, simple shopping.</p>
+        </div>
+        <div class="footer-links">
+            <strong>Explore</strong>
+            <a href="index.html?page=products">All Products</a>
+            <a href="cart.html">Shopping Cart</a>
+            <a href="orders.html">My Orders</a>
+        </div>
+        <div class="footer-links">
+            <strong>Account</strong>
+            <a href="login.html">Sign In</a>
+            <a href="register.html">Create Account</a>
+            <a href="notifications.html">Notifications</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>2026 ShopEase. All rights reserved.</span>
+        <span>Shopping made simple.</span>
+    </div>
+</footer>
+<script src="/config.js"></script>
+    <script src="js/api.js"></script>
+<script src="js/pages.js"></script>
+</body>
+</html>

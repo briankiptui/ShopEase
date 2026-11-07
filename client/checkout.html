@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | ShopEase</title>
+    <link rel="stylesheet" href="css/pages.css">
+</head>
+<body data-page="checkout">
+<div class="top-strip">Welcome to ShopEase. Discover products you'll love.</div>
+<header class="site-header">
+    <div class="nav-wrap">
+        <a class="brand" href="index.html">
+            <span class="brand-mark">S</span>
+            <span>Shop<span>Ease</span></span>
+        </a>
+        <nav class="main-nav">
+            <a href="index.html">Home</a>
+            <a href="index.html?page=products">Shop</a>
+            <a href="orders.html">My Orders</a>
+            <a href="notifications.html">Notifications</a>
+        </nav>
+        <div class="nav-actions">
+            <a class="cart-count" data-cart-count href="cart.html">0</a>
+            <a class="user-pill" data-user-name href="account.html">My Account</a>
+        </div>
+    </div>
+</header>
+<main class="page-container">
+<section class="page-heading">
+    <h1>Checkout</h1>
+    <p>Confirm your order and choose a payment method.</p>
+</section>
+
+<div class="form-grid" style="align-items:start">
+    <section class="panel">
+        <h2>Order summary</h2>
+        <div id="checkout-summary">Loading order summary...</div>
+    </section>
+
+    <section class="panel">
+        <h2>Payment details</h2>
+        <div id="checkout-message" class="message"></div>
+
+        <form id="checkout-form">
+            <div class="form-group">
+                <label for="paymentMethod">Payment method</label>
+                <select id="paymentMethod" name="paymentMethod" required>
+                    <option value="mpesa">M-Pesa (simulation)</option>
+                    <option value="card">Card (simulation)</option>
+                </select>
+            </div>
+
+            <p style="font-size:12px;color:#718096;line-height:1.7;margin:17px 0">
+                Payments are currently simulated for project demonstration.
+                No real money will be charged.
+            </p>
+
+            <button class="btn" type="submit" style="width:100%">
+                Place order
+            </button>
+        </form>
+    </section>
+</div>
+</main>
+<footer class="site-footer">
+    <div class="footer-inner">
+        <div>
+            <div class="brand" style="color:white">
+                <span class="brand-mark">S</span>
+                <span>Shop<span>Ease</span></span>
+            </div>
+            <p>Your everyday shopping destination. Quality<br>products, simple shopping.</p>
+        </div>
+        <div class="footer-links">
+            <strong>Explore</strong>
+            <a href="index.html?page=products">All Products</a>
+            <a href="cart.html">Shopping Cart</a>
+            <a href="orders.html">My Orders</a>
+        </div>
+        <div class="footer-links">
+            <strong>Account</strong>
+            <a href="login.html">Sign In</a>
+            <a href="register.html">Create Account</a>
+            <a href="notifications.html">Notifications</a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <span>2026 ShopEase. All rights reserved.</span>
+        <span>Shopping made simple.</span>
+    </div>
+</footer>
+<script src="/config.js"></script>
+    <script src="js/api.js"></script>
+<script src="js/pages.js"></script>
+</body>
+</html>
